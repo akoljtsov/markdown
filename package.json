@@ -1,0 +1,13 @@
+{
+  "name": "markdown_editor",
+  "version": "1.0.0",
+  "description": "Simple Markdown editor with live preview",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^25.2.0",
+    "marked": "^5.0.0"
+  }
+}
