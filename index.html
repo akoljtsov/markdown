@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Markdown Editor</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Editor</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #container { display: flex; height: 90vh; }
+        #editor { width: 50%; padding: 10px; border-right: 1px solid #ccc; resize: none; }
+        #preview { width: 50%; padding: 10px; overflow-y: scroll; }
+        #buttons { margin: 10px; }
+    </style>
 </head>
 <body>
-  <div id="container">
-    <textarea id="editor" placeholder="Type Markdown here..."></textarea>
-    <div id="preview"></div>
-  </div>
-  <script src="renderer.js"></script>
+    <div id="buttons">
+        <button id="open-button">Відкрити</button>
+        <button id="save-button">Зберегти</button>
+    </div>
+    <div id="container">
+        <textarea id="editor" placeholder="Введіть текст Markdown..."></textarea>
+        <div id="preview"></div>
+    </div>
+
+    <script src="renderer.js"></script>
 </body>
 </html>
